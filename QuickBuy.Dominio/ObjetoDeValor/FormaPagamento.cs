@@ -25,7 +25,7 @@ namespace QuickBuy.Dominio.ObjetoDeValor
             get { return Id == (int)TipoFormaPagamentoEnum.Deposito; }
 
         }
-        public bool ENaoDefinido
+        public bool NaoDefinido
         {
             get { return Id == (int)TipoFormaPagamentoEnum.NaoDefinido; }
 
