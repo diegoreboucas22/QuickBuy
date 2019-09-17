@@ -32,13 +32,10 @@ namespace QuickBuy.Dominio.Entidades
             LimparMensagensValidacao();
 
             if (!ItensPedidos.Any())
-            {
                 MensagemValidacao.Add("Crítica - Pedido não pode ficar sem item de pedido");
-            }
-            if (string.IsNullOrEmpty(CEP))
-            {
 
-            }
+            if (string.IsNullOrEmpty(CEP))
+                MensagemValidacao.Add("Crítica - CEP deve estar preenchido");
         }
     }
 }
